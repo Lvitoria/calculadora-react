@@ -2,6 +2,10 @@
     height: 320px;
     width: 253px;
     border-radius: 5px;
+    /* não deixa sair fora da div */
     overflow: hidden;
-    background-color: red; 
+    
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: 1fr 48px 48px 48px 48px 48px;
 }
