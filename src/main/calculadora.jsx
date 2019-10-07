@@ -5,6 +5,7 @@ import Display  from '../components/Display';
 
 export default class Calculadora extends Component{
     
+    //rever essa aula
     constructor(props){
         super(props);
         this.clearMemory = this.clearMemory.bind(this);
