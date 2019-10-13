@@ -31,6 +31,7 @@ export default class Calculadora extends Component{
     
     setOperation(operation){
         console.log(operation);
+        
         if(this.state.current === 0){
             this.setState({ operation, current: 1, clearDisplay: true})
         }else{
@@ -110,7 +111,7 @@ export default class Calculadora extends Component{
                 <Button label="+" click={this.setOperation} operation />
                 <Button label="0" click={this.addDigit} double/>
                 <Button label="." click={this.addDigit} />
-                <Button label="=" click={this.addDigit} operation/>
+                <Button label="=" click={this.setOperation} operation/>
             </div>
         )
     }
